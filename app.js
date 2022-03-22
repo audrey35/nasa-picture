@@ -28,11 +28,9 @@ app.get("/", (req, res) => {
 });
 
 app.post("/picture", (req, res) => {
-  var date = req.body.date;
-  var url = "https://www.dictionaryapi.com/api/v3/references/collegiate/json/";
-  var key = "?key=d2143e94-412a-448b-bb9d-51702131b42f";
   pre =
     "https://api.nasa.gov/planetary/apod?api_key=QE7r1w0Sdy3YDH8wkH3Fo7d3iZ1Ls6Mifbq7Hjzu";
+  var date = req.body.date;
   url = pre + "&date=" + date;
 
   request = https.get(url, (result) => {

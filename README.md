@@ -1,6 +1,6 @@
 # Picture of the Day from NASA
 
-Heroku: https://word-search-games.herokuapp.com
+This [app](https://nasa-picture.herokuapp.com/) uses Node and Express to grab data from [NASA API](https://api.nasa.gov/planetary/apod?api_key=QE7r1w0Sdy3YDH8wkH3Fo7d3iZ1Ls6Mifbq7Hjzu) and display the picture of the day for a selected date.
 
 ## Environment Setup
 
@@ -23,7 +23,7 @@ npm install
 - push the changes to heroku
 
 ```
-heroku git:remote -a word-search-games -r a5 // add remote for heroku app
+heroku git:remote -a nasa-picture -r a5 // add remote for heroku app
 git push a5 master:main // push the changes to heroku
 ```
 
